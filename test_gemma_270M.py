@@ -12,5 +12,5 @@ MAX_NEW_TOKENS = 30
 model = model_class(MODEL_NAME)
 output = "write a story"
 for i in range(5): 
-    output = model.generate(output, MAX_NEW_TOKENS)
+    output = model.generate("this sucks bro, try something different", MAX_NEW_TOKENS)
     print(output)
