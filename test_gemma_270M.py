@@ -7,7 +7,7 @@ from transformers import AutoTokenizer
 from src.model_class import model_class
 
 MODEL_NAME = "google/gemma-3-270m-it"
-MAX_NEW_TOKENS = 30
+MAX_NEW_TOKENS = 100
 
 model = model_class(MODEL_NAME)
 output = "write a story"
