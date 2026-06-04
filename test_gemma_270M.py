@@ -10,7 +10,8 @@ MODEL_NAME = "google/gemma-3-270m-it"
 MAX_NEW_TOKENS = 100
 
 model = model_class(MODEL_NAME)
-output = "write a story"
+input = "write a story about a dragon and a castle"
 for i in range(5): 
-    output = model.generate("this sucks bro, try something different", MAX_NEW_TOKENS)
+    output = model.generate(input, MAX_NEW_TOKENS, temperature=1)
+    input = "make it more dramatic please"
     print(output)
